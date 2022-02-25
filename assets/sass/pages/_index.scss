@@ -1,0 +1,101 @@
+.index-portfolio {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+
+    &__container {
+        width: map-get($map: $breakpoints, $key: md);
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__right {
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    &__button {
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        text-transform: uppercase;
+        color: $color-black;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background-color: $color-white;
+        border: 3px solid $color-black;
+
+        &:hover {
+            color: $color-primary;
+            border-color: $color-primary;
+        }
+    }
+}
+
+.tell-me {
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__container {
+        width: map-get($map: $breakpoints, $key: md);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $color-primary;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: $font-weight-regular;
+        color: $color-black;
+        font-size: 1.4rem;
+        text-align: center;
+        letter-spacing: 0.08rem;
+        line-height: 3rem;
+        margin-bottom: 40px;
+    }
+}
+
+.film {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    &__container {
+        width: map-get($map: $breakpoints, $key: md);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        height: 240px;
+        background-color: $color-white;
+    }
+
+    &__photos {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    &__instagram {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        color: $color-black;
+        font-family: 'Antic Didone', serif;
+    }
+}

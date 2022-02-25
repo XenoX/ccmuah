@@ -1,0 +1,62 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    font-family: 'Playfair Display', serif;
+    color: $color-black;
+    background-color: $color-white;
+
+    &__container {
+        width: map-get($map: $breakpoints, $key: md);
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+
+        &--name {
+            font-size: 1.4rem;
+            line-height: 35px;
+        }
+
+        &--role {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.7rem;
+            color: $color-primary;
+        }
+    }
+
+    &__menu {
+        display: flex;
+        flex-flow: row nowrap;
+    
+        li {
+            padding: 0 20px 0 20px;
+
+            a:hover, a.active {
+                color: $color-primary;
+                border-bottom: 2px solid $color-primary;
+                padding-bottom: 8px;
+            }
+        }
+
+        &--right {
+            img {
+                opacity: 0.8;
+                height: 1.25rem;
+            }
+
+            li:last-child {
+                padding: 0;
+            }
+        }
+    }
+}

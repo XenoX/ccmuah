@@ -1,0 +1,91 @@
+.footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    min-height: 300px;
+    background-color: $color-primary;
+    color: $color-white;
+    margin-top: 40px;
+
+    &__container {
+        width: map-get($map: $breakpoints, $key: md);
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        padding: 40px 0 10px 0;
+    }
+
+    &__menu {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: $font-weight-medium;
+            font-size: 1.5rem;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+
+        ul {
+            display: flex;
+            flex-flow: column nowrap;
+            font-family: 'Barlow Semi Condensed', serif;
+            font-weight: $font-weight-regular;
+            font-size: 1.3rem;
+
+            li {
+                margin-bottom: 5px;
+            }
+        }
+    }
+
+    &__socials {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+
+    &__item {
+        &--last {
+            margin-top: 25px
+        }
+    }
+
+    &__line {
+        hr {
+            color: $color-white;
+            width: 500px;
+            border-top: 0;
+            margin: 35px auto 15px auto;
+        }
+    }
+
+    &__logo {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+        letter-spacing: 0.3rem;
+        margin-bottom: 30px;
+
+        &--name {
+            font-family: 'Playfair Display', sans-serif;
+            font-size: 1.7rem;
+            line-height: 45px;
+        }
+
+        &--role {
+            font-family: 'Roboto', sans-serif;
+            font-size: 0.7rem;
+        }
+    }
+
+    &__copyright {
+        font-family: 'Barlow Semi Condensed', serif;
+        margin: auto;
+    }
+}

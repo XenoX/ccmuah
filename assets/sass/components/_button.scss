@@ -1,0 +1,30 @@
+.button {
+    font-family: 'Barlow', sans-serif;
+    text-transform: uppercase;
+    color: $color-black;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding: 15px;
+    width: 150px;
+    background-color: $color-white;
+    border: 2px solid $color-black;
+
+    &:hover {
+        color: $color-primary;
+        border-color: $color-primary;
+    }
+
+    &--primary {
+        color: $color-primary;
+        border-color: $color-primary;
+        max-height: 20px;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+}

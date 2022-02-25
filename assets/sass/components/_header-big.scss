@@ -1,0 +1,41 @@
+.header-big {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    height: 750px;
+    margin-bottom: 40px;
+
+    &__image {
+        object-fit: cover;
+        object-position: 60% 18%;
+        width: 100%;
+        height: 100%;
+    }
+    
+    &__content {    
+        background-color: $color-white;
+        padding: 30px 85px 15px 40px;
+        max-width: 450px;
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        transform: translate(-35%, -50%);
+
+        &--title {
+            font-family: 'Playfair Display', serif;
+            color: $color-primary;
+            font-size: 5rem;
+            margin-bottom: 25px;
+            text-shadow: 0 4px 4px rgba($color: #000000, $alpha: 0.25);
+        }
+
+        &--text {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+            font-weight: $font-weight-light;
+            font-size: 1.3rem;
+            color: $color-black;
+            margin-bottom: 25px;
+            padding-left: 45px;
+        }
+    }
+}

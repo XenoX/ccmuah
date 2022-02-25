@@ -1,0 +1,117 @@
+.prestations {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    width: map-get($map: $breakpoints, $key: md);
+
+    &__container {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        width: 100%;
+        height: 550px;
+        margin-bottom: 30px;
+    }
+
+    &__content {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        font-family: "Barlow Semi Condensed", serif;
+        font-size: 1rem;
+        margin-left: 30px;
+        width: 100%;
+        background-color: $color-white;
+        padding: 30px 40px;
+        color: $color-black;
+        text-align: justify;
+
+        &--pro {
+            padding: 80px 70px;
+            
+            p {
+                font-size: 1.2rem;
+            }
+
+            .button {
+                width: 202px;
+                margin: 0 auto;
+            }
+        }
+
+        &--left {
+            margin-left: 0;
+            margin-right: 30px;
+        }
+
+        h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.7rem;
+            font-weight: $font-weight-regular;
+            color: $color-primary;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        hr {
+            width: 300px;
+            border-top: 0;
+            opacity: 0.2;
+            margin: 15px auto;
+        }
+
+        p {
+            line-height: 27px;
+        }
+
+        ul {
+            list-style-type: disc;
+            line-height: 1.7rem;
+            opacity: 0.7;
+        }
+
+        .primary {
+            font-weight: $font-weight-medium;
+            color: $color-primary;
+        }
+
+        .infos {
+            opacity: 0.8;
+            font-weight: $font-weight-light;
+        }
+    }
+
+
+    &__footer {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        margin-top: 20px;
+        align-items: center;
+    }
+
+    &__infos {
+        display: flex;
+        flex-flow: column nowrap;
+        width: 50%;
+
+        &--title {
+            color: $color-primary;
+            font-size: 1.3rem;
+            font-weight: $font-weight-medium;
+        }
+
+        &--subtitle {
+            color: $color-primary;
+            font-size: 1.1rem;
+            font-weight: $font-weight-regular;
+        }
+
+        &--description {
+            color: $color-black;
+            font-size: 0.8rem;
+            font-weight: $font-weight-light;
+            opacity: 0.8;
+        }
+    }
+}

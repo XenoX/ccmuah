@@ -1,0 +1,15 @@
+@import 'base/reset';
+@import 'base/typography';
+@import 'utils/variables';
+@import 'utils/mixins';
+@import 'layout/navbar';
+@import 'layout/footer';
+@import 'components/header-big';
+@import 'components/header';
+@import 'components/button';
+@import 'components/prestations';
+@import 'pages/index';
+
+body {
+    background-color: $color-secondary;
+}
